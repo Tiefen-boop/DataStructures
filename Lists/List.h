@@ -5,8 +5,10 @@
 #ifndef DATASTRUCTURES_LIST_H
 #define DATASTRUCTURES_LIST_H
 
+#include "../Iter/Iterable.h"
+
 template < class T>
-class List {
+class List : public Iterable<T>{
 public:
     //Returns the number of elements in this list.
     virtual int size() = 0;
