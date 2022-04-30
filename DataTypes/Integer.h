@@ -15,9 +15,10 @@ public:
     Integer(int val);
     Integer(const Integer &o);
     Integer(Integer&& o) noexcept ;
-    Integer& operator=(Integer o);
-    Integer& operator=(int o);
+    Integer& operator=(const Integer& o);
+    Integer& operator=(const int& o);
     friend std::ostream & operator<<(std::ostream& os, const Integer& dt);
+    bool operator==(const Integer& o) const {return val == o.val;}
 };
 
 

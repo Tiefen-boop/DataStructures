@@ -10,7 +10,7 @@
 template <class T>
 class Iterable{
 public:
-    virtual Iterator<T> iterator() = 0;
+    virtual Iterator<T>* iterator() = 0;
 };
 
 #endif //DATASTRUCTURES_ITERABLE_H

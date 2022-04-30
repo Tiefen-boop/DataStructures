@@ -8,12 +8,12 @@ Integer::Integer(int val) : val(val){
 
 }
 
-Integer &Integer::operator=(Integer o) {
+Integer &Integer::operator=(const Integer& o) {
     val = o.val;
     return *this;
 }
 
-Integer &Integer::operator=(int o) {
+Integer &Integer::operator=(const int& o) {
     val = o;
     return *this;
 }
